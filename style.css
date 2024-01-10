@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url(Fonts/Radomir\ Tinkov\ -\ Gilroy-Light.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+ 
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    
+}
+.nav
+{
+    height: 100px;
+    width: 100%;
+    /* background-color: lightseagreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vw;
+    border-bottom: 1px solid #dadada;
+    position: relative;
+
+}
+.nav h1{
+    color: #EE9618;
+
+    
+}
+.inner-nav{
+    display:flex;
+    gap: 4vw;
+    
+}
+.inner-nav h4{
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #1F4167;
+    /* padding: 5vw 0vw; */
+    
+}
+.inner-nav button{
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 0.4vw 0.8vw;
+    border-radius: 0.3vw;
+    border: none;
+    background-color:#EE9618;
+    color: white;
+}
+.inner-nav i{
+    font-weight: bold;
+    display: none;
+}
+.content
+{
+    height: 519px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.left
+{
+    height: 100%;
+    width: 55%;
+    /* background-color: crimson; */
+    padding: 6vw 6vw;
+}
+.left h1{
+    font-size: 2.5vw;
+    color: #1F4167;
+    
+}
+.left span{
+    color: #EE9618
+}
+.left p{
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #1F4167;
+    margin-top: 1.3vw;
+    line-height: 1.8vw;
+    /* width: 100%; */
+}
+.left button{
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin-top: 1.3vw;
+    padding: 0.5vw 1vw;
+    border-radius: 0.3vw;
+    border: none;
+    background-color:#EE9618;
+    color: white;
+}
+.right
+{
+    height: 100%;
+    width: 50%;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+
+@media (max-width:600px) {
+    .nav{
+        color: #1F4167;
+        height: 60px;
+    }
+    .nav h1{
+        font-size: 6vw;
+    }   
+    .nav i{
+        font-size: 6vw;
+        display: block;
+    }
+    .nav h4{
+        display: none;
+    }
+    .inner-nav button{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .left
+{
+    height: 40%;
+    width: 100%;
+
+    padding: 6vw 6vw;
+}
+.left h1{
+    font-size: 5vw;
+    
+}
+.left span{
+    color: #EE9618;
+}
+.left p{
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #666;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+    line-height: 3.5vw;
+}
+.left button{
+    font-size: 2.7vw;
+    font-weight: 600;
+    margin-top: 1.3vw;
+    padding: 2vw 3vw;
+    border-radius: 0.5vw;
+    border: none;
+    background-color:#EE9618;
+    color: white;
+}
+.right
+{
+    height: 60%;
+    width:100%;
+}
+.right img{
+    margin-top: 10% ;
+}
+
+}
